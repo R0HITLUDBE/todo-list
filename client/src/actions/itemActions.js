@@ -17,9 +17,6 @@ export const getItems = () => (dispatch) => {
         type: GET_ITEMS,
         payload: res.data,
       })
-    )
-    .catch((err) =>
-      dispatch(returnErrors(err.response.data, err.response.status))
     );
 };
 
